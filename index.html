@@ -53,10 +53,17 @@ font-size:14px;
 
 .hero{
 height:100vh;
-display:grid;
-grid-template-columns:1fr 1fr;
+position:relative;
+
+background-image:url('skinmate-mood.jpg');
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
 align-items:center;
-gap:80px;
+
+text-align:center;
 padding:0 10%;
 }
 
@@ -65,12 +72,13 @@ font-size:76px;
 font-weight:700;
 line-height:1.05;
 margin-bottom:20px;
+color:white;
 }
 
 .hero h2{
 font-size:30px;
 font-weight:400;
-color:#666;
+color:white;
 margin-bottom:25px;
 }
 
@@ -229,14 +237,27 @@ SKINMATE
 
 <section class="hero">
 
-<div style="text-align:left;">
+<div style="
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.28);
+"></div>
+
+<div style="
+position:relative;
+z-index:2;
+text-align:center;
+">
 
 <img
 src="skinmate-logo.png"
 style="
-width:280px;
+width:320px;
 max-width:90%;
-margin-bottom:25px;
+margin-bottom:30px;
 ">
 
 <h1>
@@ -248,35 +269,14 @@ Naturally.
 Stay Calm. Study On.
 </h2>
 
-<p>
-학생들의 피부는<br>
-학생들의 라이프스타일에서 시작됩니다.
-</p>
-
 <div style="
-margin-top:50px;
+margin-top:60px;
 font-size:14px;
 letter-spacing:4px;
-color:#777;
+color:white;
 ">
 SCROLL ↓
 </div>
-
-</div>
-
-<div style="
-display:flex;
-justify-content:center;
-">
-
-<img
-src="hero-cleanser.png"
-style="
-width:520px;
-max-width:100%;
-border-radius:32px;
-box-shadow:0 30px 60px rgba(0,0,0,.10);
-">
 
 </div>
 
@@ -313,19 +313,6 @@ SKINMATE는 학생들이 실제로 경험하는
 </section>
 
 <section id="products">
-  
-  <section id="mood">
-
-<img
-src="skinmate-mood.png"
-style="
-width:100%;
-display:block;
-border-radius:36px;
-box-shadow:0 30px 60px rgba(0,0,0,.08);
-">
-
-</section>
   
 <div style="
 display:flex;
