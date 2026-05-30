@@ -53,17 +53,17 @@ font-size:14px;
 
 .hero{
 height:100vh;
-display:flex;
-justify-content:center;
+display:grid;
+grid-template-columns:1fr 1fr;
 align-items:center;
-text-align:center;
+gap:80px;
 padding:0 10%;
 }
 
 .hero h1{
-font-size:110px;
+font-size:88px;
 font-weight:700;
-letter-spacing:3px;
+line-height:1.05;
 margin-bottom:20px;
 }
 
@@ -224,11 +224,18 @@ SKINMATE
 
 <section class="hero">
 
-<div>
+<section class="hero">
 
-<h1>Student Skin,<br>Naturally.</h1>
+<div style="text-align:left;">
 
-<h2>Stay Calm. Study On.</h2>
+<h1>
+Student Skin,<br>
+Naturally.
+</h1>
+
+<h2>
+Stay Calm. Study On.
+</h2>
 
 <p>
 학생들의 피부는<br>
@@ -236,13 +243,29 @@ SKINMATE
 </p>
 
 <div style="
-margin-top:60px;
+margin-top:50px;
 font-size:14px;
 letter-spacing:4px;
 color:#777;
 ">
 SCROLL ↓
 </div>
+
+</div>
+
+<div style="
+display:flex;
+justify-content:center;
+">
+
+<img
+src="hero-cleanser.png"
+style="
+width:520px;
+max-width:100%;
+border-radius:32px;
+box-shadow:0 30px 60px rgba(0,0,0,.10);
+">
 
 </div>
 
